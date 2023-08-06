@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #FFFFFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +24,11 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gradient{
+  font-size: 40px; 
+  padding: auto;
+  margin: auto;
+  background: -webkit-linear-gradient(280deg, #fde725, #5ec962, #21918c, #3b528b, #440154);
+  -webkit-background-clip: text; 
+  color: transparent; 
 }
