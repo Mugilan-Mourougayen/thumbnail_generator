@@ -6,7 +6,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import { Button } from '@mui/material';
-
+import './App.css';
 const List = () => {
     const [list,setList]=useState([])
     const [image,setImage]=useState(null)
@@ -58,7 +58,9 @@ const List = () => {
     
 
   return (
-    <div>
+   
+    <div className="App">
+    <header className="App-header">
         <Autocomplete
       disablePortal
       id="combo-box-demo"
@@ -73,7 +75,7 @@ const List = () => {
 
    {image &&
 
-       <Button onClick={getVideo}>
+       <Button variant="contained" onClick={getVideo}>
         get Video
     </Button>
     }
@@ -105,7 +107,7 @@ const List = () => {
         </ImageListItem>
       ))}
     </ImageList>
-    
+    </header>
     </div>
   )
 }
